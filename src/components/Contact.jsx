@@ -1,8 +1,11 @@
 import React from 'react';
+import useRevealOnScroll from '../hooks/useRevealOnScroll';
 
 const Contact = () => {
+    const ref = useRevealOnScroll();
+
     return (
-        <section className="py-24 md:py-40 border-t border-[var(--border-subtle)] mb-20 relative z-10 reveal-on-scroll">
+        <section ref={ref} className="py-24 md:py-40 border-t border-[var(--border-subtle)] mb-20 relative z-10 reveal-on-scroll">
             <div className="max-w-3xl mx-auto text-center">
                 <span className="text-label text-[var(--text-grey)] mb-6 block">04 — Contact</span>
                 <h2 className="font-serif-display text-5xl md:text-7xl mb-6">Get in touch.</h2>

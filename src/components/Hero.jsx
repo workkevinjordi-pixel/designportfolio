@@ -1,8 +1,11 @@
 import React from 'react';
+import useRevealOnScroll from '../hooks/useRevealOnScroll';
 
 const Hero = () => {
+    const ref = useRevealOnScroll();
+
     return (
-        <section className="min-h-screen flex flex-col justify-center pt-24 pb-20 relative z-10 reveal-on-scroll">
+        <section ref={ref} className="min-h-screen flex flex-col justify-center pt-24 pb-20 relative z-10 reveal-on-scroll">
             <div className="hidden md:block absolute top-[20%] right-[15%] text-label text-[var(--text-grey)]">Product Lead</div>
             <div className="grid grid-cols-12 gap-4">
                 <div className="col-span-12 md:col-span-10 md:col-start-2 lg:col-span-9 lg:col-start-2">

@@ -18,6 +18,18 @@ export default {
         'sans': ['Inter', 'sans-serif'],
         'serif-display': ['"DM Serif Display"', 'serif'],
       },
+      animation: {
+        'float-slow': 'float 20s ease-in-out infinite',
+        'float-medium': 'float 15s ease-in-out infinite reverse',
+      },
+      keyframes: {
+        float: {
+          '0%, 100%': { transform: 'translate(0, 0) scale(1)', opacity: '0.05' },
+          '25%': { transform: 'translate(2%, 4%) scale(1.02)', opacity: '0.08' },
+          '50%': { transform: 'translate(4%, 0) scale(1.05)', opacity: '0.06' },
+          '75%': { transform: 'translate(-2%, -4%) scale(1.02)', opacity: '0.08' },
+        }
+      }
     },
   },
   plugins: [],

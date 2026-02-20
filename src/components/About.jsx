@@ -1,8 +1,11 @@
 import React from 'react';
+import useRevealOnScroll from '../hooks/useRevealOnScroll';
 
 const About = () => {
+    const ref = useRevealOnScroll();
+
     return (
-        <section className="py-24 md:py-40 border-t border-[var(--border-subtle)] relative z-10 reveal-on-scroll" id="about">
+        <section ref={ref} className="py-24 md:py-40 border-t border-[var(--border-subtle)] relative z-10 reveal-on-scroll" id="about">
             <div className="grid grid-cols-1 md:grid-cols-12 gap-y-8 md:gap-x-8">
                 <div className="col-span-12 md:col-span-3">
                     <span className="text-label text-[var(--text-grey)] sticky top-32">01 — About</span>
