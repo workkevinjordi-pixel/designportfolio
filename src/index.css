@@ -30,6 +30,16 @@ body {
         text-transform: uppercase;
         font-weight: 500;
     }
+
+    .editorial-gradient {
+        background: radial-gradient(circle at 50% 0%, rgba(45, 212, 191, 0.12), rgba(190, 242, 100, 0.08) 40%, transparent 70%);
+    }
+
+    .glass-nav {
+        background: rgba(0, 0, 0, 0.8);
+        backdrop-filter: blur(12px);
+        -webkit-backdrop-filter: blur(12px);
+    }
 }
 
 ::-webkit-scrollbar {

@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import useRevealOnScroll from '../hooks/useRevealOnScroll';
 
 const Work = () => {
@@ -15,13 +16,13 @@ const Work = () => {
                 </div>
             </div>
             <div className="grid grid-cols-1 md:grid-cols-3 gap-x-8 gap-y-16">
-                <div className="group cursor-pointer">
+                <Link to="/sparta" className="group cursor-pointer block">
                     <div className="aspect-[4/3] w-full bg-[#111] mb-6 overflow-hidden relative">
                         <div className="absolute inset-0 flex items-center justify-center text-[var(--border-subtle)] text-6xl font-serif-display opacity-20 group-hover:scale-105 transition-transform duration-700">Sparta</div>
                     </div>
                     <h3 className="font-serif-display text-2xl mb-2 group-hover:underline decoration-1 underline-offset-4">Sparta</h3>
                     <p className="text-[var(--text-grey)] text-sm leading-relaxed">Structured vulnerability reporting platform for cybersecurity teams.</p>
-                </div>
+                </Link>
                 <div className="group cursor-pointer">
                     <div className="aspect-[4/3] w-full bg-[#111] mb-6 overflow-hidden relative">
                         <div className="absolute inset-0 flex items-center justify-center text-[var(--border-subtle)] text-6xl font-serif-display opacity-20 group-hover:scale-105 transition-transform duration-700">Quadra</div>

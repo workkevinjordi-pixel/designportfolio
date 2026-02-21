@@ -13,6 +13,12 @@ export default {
         'border-subtle': 'rgba(255,255,255,0.08)',
         'gradient-teal': '#2A5A58',
         'gradient-lime': '#C0D100',
+        'primary': '#2b6cee',
+        'accent-teal': '#2dd4bf',
+        'accent-lime': '#bef264',
+        'neutral-surface': '#111111',
+        'background-light': '#f6f6f8',
+        'background-dark': '#000000',
       },
       fontFamily: {
         'sans': ['Inter', 'sans-serif'],
